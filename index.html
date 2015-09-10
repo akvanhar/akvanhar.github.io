@@ -1,60 +1,75 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="/static/index.css">
-    <title><i class="fa fa-coffee fa-lg"></i>Alyson van Hardenberg</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Alyson van Hardenberg</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" 
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!-- Google Font -->
+    <link href='https://fonts.googleapis.com/css?family=Pacifico|Open+Sans+Condensed:300,300italic,700' rel='stylesheet' type='text/css'>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!-- Stylesheet -->
+    <link rel="stylesheet"
+            href="index.css">
 </head>
 <body>
-<div class="container">
-	<nav class="navbar navbar-default">
-	  <div class="container-fluid">
-	    <!-- Brand and toggle get grouped for better mobile display -->
-	    <div class="navbar-header">
-	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-	        <span class="sr-only">Toggle navigation</span>
-	        <span class="icon-bar"></span>
-	        <span class="icon-bar"></span>
-	        <span class="icon-bar"></span>
-	      </button>
-	      	<a href="/"><img class="navbar-brand" id="coffeeBeans" alt="Coffee beans in a cup" src="/static/images/coffee-beans.jpg"></a>
-	    </div>
+    <!-- Static navbar -->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button"
+                        class="navbar-toggle collapsed"
+                        data-toggle="collapse"
+                        data-target="#navbar"
+                        aria-expanded="false"
+                        aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Alyson van Hardenberg</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+	      			<li><a href="mailto:avanhardenberg@gmail.com"><i class="fa fa-envelope fa-lg"></i></a></li>
+	      			<li><a href="https://www.linkedin.com/in/akvanhar/"><i class="fa fa-linkedin-square fa-lg"></i></a></li>
+                	<a href="https://www.github.com/akvanhar/"><i class="fa fa-github fa-lg"></i></a>
+                	<a href="https://www.twitter.com/akvanh/"><i class="fa fa-twitter-square fa-lg"></i></a>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-	    <!-- Collect the nav links, forms, and other content for toggling -->
-	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-	      <ul class="nav navbar-nav">
-	        <li id="aboutButton"><a id="aboutLink" href="/">About</a></li>
-			<li id="resumeButton"><a id="resumeLink" href='resume.html'>Resume</a></li>
-			<li id="portfolioButton"><a id="portfolioLink" href='portfolio.html'>Portfolio</a></li>
-	      </ul>
-	      
-	      <ul class="nav navbar-nav navbar-right">
-	      		<li><a href="mailto:avanhardenberg@gmail.com" target="_blank"><i class="fa fa-envelope fa-lg"></i></a></li>
-	      		<li><a href="https://www.linkedin.com/in/akvanhar/" target="_blank"><i class="fa fa-linkedin-square fa-lg"></i></a></li>
-	      		
-                <a href="https://www.github.com/akvanhar/" target="_blank"><i class="fa fa-github fa-lg"></i></a>
-                <a href="https://www.twitter.com/akvanh/" target="_blank"><i class="fa fa-twitter-square fa-lg"></i></a>
-	      </ul>
-	    </div><!-- /.navbar-collapse -->
-	  </div><!-- /.container-fluid -->
-	</nav>
-</div>
-<div id="bodyContainerFluid" class="container-fluid">
-	<div class="row">
-		<h1 class="col-sm-4 col-sm-offset-4">Alyson van Hardenberg</h1>
-	</div>
-	<div class="row">
-		<p class="col-sm-4 col-sm-offset-4">Software Engineer<br>
-		Formerly a registered nurse<br>
-		I got into engineering because I enjoy problem solving in a fast-paced environment while having the oportunity to create something.<br>
-		Working on finding a role in full-stack or front-end development.</p>
-	</div>
-</div>
+    <div class="container-fluid">
+        <div class="row">
+            <div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 left">
+                    <h1 id="h1left">Alyson van Hardenberg</h1>
+                    <p>Formerly a registered nurse. I became interested in software engineering because I enjoy problem solving in a fast-paced environment while having the oportunity to be creative. I am looking for a role in full-stack or front-end development.</p>
+                </div>
+            </div>
+            <div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 right">
+                    <h1 id="h1right">Software Engineer</h1>
+                    <div class="col-md-4 col-md-offset-3">
+                        <ul class="nav navbar-nav">
+					        <li id="aboutButton"><a id="aboutLink" href="/">About</a></li>
+							<li id="resumeButton"><a id="resumeLink" href='resume.html'>Resume</a></li>
+							<li id="portfolioButton"><a id="portfolioLink" href='portfolio.html'>Portfolio</a></li>
+				      	</ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="http://code.jquery.com/jquery.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 </body>
-
 <footer>
 	<div class="row">
     	<p>Created by Alyson van Hardenberg</p>
